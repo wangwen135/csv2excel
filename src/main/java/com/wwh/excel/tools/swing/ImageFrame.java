@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-import com.wwh.excel.tools.worker.Csv2Xls;
+import com.wwh.excel.tools.worker.Csv2Xlsx;
 
 public class ImageFrame extends JFrame {
 
@@ -119,7 +119,7 @@ public class ImageFrame extends JFrame {
                             return;
                         }
 
-                        Csv2Xls.convert(list.get(0));
+                        Csv2Xlsx.convert(list.get(0));
 
                         Point losPoint = ImageFrame.this.getLocationOnScreen();
                         popupDialog.showDelayHide(losPoint.x + dtde.getLocation().x, losPoint.y + dtde.getLocation().y);
